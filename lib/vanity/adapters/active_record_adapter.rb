@@ -240,6 +240,10 @@ module Vanity
         record && record.destroy
       end
 
+      def ready_to_load_experiments
+        VanityRecord.connection.table_exists?("vanity_experiments")
+      end
+
       def to_s
         @options.to_s
       end

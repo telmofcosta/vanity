@@ -135,6 +135,10 @@ module Vanity
         fail "Not implemented"
       end
 
+      def ready_to_load_experiments
+        fail "Not implemented"
+      end
+
     end
   end
 end

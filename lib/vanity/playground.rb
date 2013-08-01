@@ -156,7 +156,7 @@ module Vanity
     # Loads all metrics and experiments.  Rails calls this during
     # initialization.
     def load!
-      experiments
+      experiments if connection.ready_to_load_experiments
       metrics
     end
 

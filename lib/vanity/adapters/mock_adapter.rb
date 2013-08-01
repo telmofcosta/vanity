@@ -152,6 +152,11 @@ module Vanity
       def destroy_experiment(experiment)
         @experiments.delete experiment
       end
+
+      def ready_to_load_experiments
+        true
+      end
+
     end
   end
 end
